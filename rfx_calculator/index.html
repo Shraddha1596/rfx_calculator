@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+    <title>RFX Price Calculator</title>
+  </head>
+  <body>
+    <h1>RFX Price Calculator</h1>
+    <div class="signed_radio">
+      <p>Will this be signed?</p>
+      <input type="radio" name="signed_radio_option"  value="yes">Yes
+      <input type="radio" name="signed_radio_option" value="no">No
+    </div>
+    <div class="signed_radio_ifno">
+      <p>Would you like this signed?</p>
+      <input type="radio" name="signed_radio_no_option" value="yes">Yes
+      <input type="radio" name="signed_radio_no_option" value="no">No
+    </div>
+    <p>
+      Number of Injured Body Parts:
+      <input type="number" id="bodyParts" min="0"/> 
+    </p>
+    <p>
+      Pages of Chart Documentation:
+      <input type="number" id="pages" min="0"/> 
+    </p>
+    <p>
+      <input type="button" value="Calculate" id="calculate"/>
+      <input type="button" value="Reset" id="reset_value">
+    </p>
+
+    <div class="result">
+        <div class="copied_notify"></div>
+     
+      <div id="div_copied">
+
+        <div>
+          <span>Total body parts: <label id="totalBodyParts"></label></span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;Body parts price: $<label id="bodyPartPrice"></label></span>
+        </div>
+
+        <div>
+          <span>Pages: <label id="totalPages"></label></span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;Extra pages: <label id="addPages"></label></span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;Extra page fee: $<label id="addPagesFee"></label></span>
+        </div>
+        
+        <div>Signature: $<label id="signature"></label></div>
+
+        <div>Grand total: $<label id="grandTotal"></label></div>
+
+      </div>
+      <a id="div_copied" name="copy_result"><input type="button" value="Copy to Clipboard" class="copy" /></a>
+    </div>
+
+  </body>
+
+</html>

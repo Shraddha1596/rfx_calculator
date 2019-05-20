@@ -1,0 +1,32 @@
+/* Styles go here */
+
+input[type="number"] {
+  	width: 40px;
+}
+div.result{   
+	background: #eee; padding: 10px; 
+}
+body {
+	max-width: 500px;
+}
+.copied_notify {
+ 	background: #bfbfbf;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+	display: none;
+	font-size: 18px;
+}
+.result{
+	display: none;
+}
+.signed_radio_ifno{
+	display: none;
+}
+a#div_copied{
+	text-decoration: none;
+}
+.result div{
+  padding:5px;
+}
